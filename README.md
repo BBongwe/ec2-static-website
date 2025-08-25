@@ -10,7 +10,7 @@ Deployed a static website on an AWS EC2 instance (Amazon Linux 2) with Apache. P
 2. Installed Apache (`sudo yum install httpd` + start/enable service).
 3. Transferred site files via `scp` and set Linux permissions.
 4. Opened HTTP (port 80) in Security Groups.
-5. Attached an Elastic IP for persistent access.
+5. Attached an Elastic IP for persistent access. 
 
  Outcome
 - Site accessible publicly via Elastic IP.
