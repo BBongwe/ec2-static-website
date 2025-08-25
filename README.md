@@ -5,7 +5,7 @@ Overview
 
 Deployed a static website on an AWS EC2 instance (Amazon Linux 2) with Apache. Practiced launch, security, file transfer, and Elastic IP for stable public access.
 
- Steps Taken
+ Steps Taken:
 1. Launched EC2 (Amazon Linux 2).
 2. Installed Apache (`sudo yum install httpd` + start/enable service).
 3. Transferred site files via `scp` and set Linux permissions.
@@ -19,6 +19,9 @@ Deployed a static website on an AWS EC2 instance (Amazon Linux 2) with Apache. P
 Screenshots
 attached 
 
-Tools & Services
+Tools & Services:
 AWS EC2 • Apache • Linux (Amazon Linux 2) • SCP • Elastic IP • Security Groups
 
+Lessons learned:
+
+Learned the importance of correct Linux permissions and Security Group configuration for public site hosting.
