@@ -1,6 +1,8 @@
 # ec2-static-website
 My first ec2 static website
- Overview
+
+Overview
+
 Deployed a static website on an AWS EC2 instance (Amazon Linux 2) with Apache. Practiced launch, security, file transfer, and Elastic IP for stable public access.
 
  Steps Taken
