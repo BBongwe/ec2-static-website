@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dusty Thrifts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Dusty Thrifts</h1>
+    <p>Vintage finds curated with love</p>
+  </header>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <p>Welcome to Dusty Thrifts, your go-to destination for unique vintage clothing.</p>
+      <h2>A snippet of our Finds</h2>
+      <div class="swipe-hint" aria-label="Swipe hint">
+        <span>Swipe to view more→</span>
+      </div>
+
+      <div class="scroll-gallery" aria-label="Vintage clothing gallery">
+        <!-- Image containers -->
+        <article class="image-container">
+          <img src="tee.jpg" alt="Big Day Out Tee" />
+          <figcaption class="image-overlay">Big Day Out Tee</figcaption>
+        </article>
+        <article class="image-container">
+          <img src="jerseys.jpg" alt="Vintage Vest" />
+          <figcaption class="image-overlay">Vintage Vest</figcaption>
+        </article>
+        <article class="image-container">
+          <img src="accessories1.jpg" alt="Skull Necklace" />
+          <figcaption class="image-overlay">Skull Necklace</figcaption>
+        </article>
+        <article class="image-container">
+          <img src="me.jpg" alt="Chief Executive Officer" />
+          <figcaption class="image-overlay">Chief Executive Officer</figcaption>
+        </article>
+        <article class="image-container">
+          <img src="jersey1.jpg" alt="Knitted Button up Vintage Top" />
+          <figcaption class="image-overlay">Knitted Button up Vintage Top</figcaption>
+        </article>
+        <article class="image-container">
+          <img src="cargo.JPG" alt="Black Cargo Pants" />
+          <figcaption class="image-overlay">Black Cargo Pants</figcaption>
+        </article>
+        <article class="image-container">
+          <img src="jersey3.JPG" alt="Ash Greek Jacket" />
+          <figcaption class="image-overlay">Ash Greek Jacket</figcaption>
+        </article>
+        <article class="image-container">
+          <img src="paris.JPG" alt="Lulu Paris Tee" />
+          <figcaption class="image-overlay">Lulu Paris Tee</figcaption>
+        </article>
+        <article class="image-container">
+          <img src="sweater.JPG" alt="Twinlife Sweater" />
+          <figcaption class="image-overlay">Twinlife Sweater</figcaption>
+        </article>
+        <article class="image-container">
+          <img src="pants1.jpeg" alt="Blue VALENTINO JEANS" />
+          <figcaption class="image-overlay">Blue VALENTINO JEANS</figcaption>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About Us</h2>
+      <p>
+        Dusty Thrifts is a handpicked vintage clothing store where old meets gold. We specialize in timeless vintage jerseys, classic pants, one of a kind accessories and clothing items that add character to any wardrobe. Each piece we offer carries a bit of history, a whisper from another era, chosen not just for its look, but for the story it tells. Whether you’re hunting for a statement item or building a curated collection, Dusty Thrifts helps you wear nostalgia with pride.
+      </p>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <h2>Our Collection</h2>
+      <div class="gallery-grid" aria-label="Featured vintage collection">
+        <a href="https://www.instagram.com/p/CknnzFvNwkP/?img_index=1&igsh=ejFiczB2dThtb3B0" target="_blank" rel="noopener noreferrer">
+          <img src="pants.jpg" alt="Vintage Pants" />
+        </a>
+        <a href="https://www.instagram.com/p/CjDi2X6NZIT/?igsh=OHIwNW1ubTF2bTNx" target="_blank" rel="noopener noreferrer">
+          <img src="accessories.jpg" alt="Vintage Accessories" />
+        </a>
+        <a href="https://www.instagram.com/p/ChteJ-ANirz/?igsh=MWI5c3FqZTA2MmdoeQ==" target="_blank" rel="noopener noreferrer">
+          <img src="re.JPG" alt="Vintage Jerseys" />
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Get in Touch</h2>
+      <p>DM us on <a href="https://www.instagram.com/dustythrifts.co/" target="_blank" rel="noopener noreferrer">Instagram</a> or use the form below:</p>
+
+      <form id="contactform" action="https://formspree.io/f/mzzvjnjv" method="POST" class="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name" />
+
+        <label for="email">Email (optional)</label>
+        <input type="email" id="email" name="email" autocomplete="email" />
+
+        <label for="reason">Reason for Contact</label>
+        <select id="reason" name="reason" required>
+          <option value="" disabled selected>-- Select an option --</option>
+          <option value="Product Inquiry">Product Inquiry</option>
+          <option value="General Message">General Message</option>
+          <option value="Order Status">Order Status</option>
+          <option value="Custom Request">Custom Request</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <div id="formMessage" aria-live="polite" style="display: none; text-align: center; margin-top: 1rem; color: green; font-weight: bold;">
+        Thank you for your message! We'll get back to you soon. 😊
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dusty Thrifts. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
